@@ -7,7 +7,7 @@ const wedding = {
   venueAddress: "12/240, Church Rd, Kechery, Eranellur, Kerala 680501",
   mapUrl: "https://www.google.com/maps/search/?api=1&query=La+Maria+Castle%2C+12%2F240%2C+Church+Rd%2C+Kechery%2C+Eranellur%2C+Kerala+680501",
   // For real RSVP delivery, paste a Formspree endpoint here (see README).
-  rsvpEndpoint: ""
+  rsvpEndpoint: "https://formspree.io/f/moeeewry"
 };
 const $ = (id) => document.getElementById(id);
 const prettyDate = new Date(wedding.date);
