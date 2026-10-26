@@ -1,11 +1,11 @@
 /* CUSTOMISE THE WEDDING DETAILS IN THIS OBJECT */
 const wedding = {
   // Use local time in YYYY-MM-DDTHH:MM:SS format. Example: 2027-02-14T10:00:00
-  date: "2027-02-14T10:00:00",
-  dateLabel: "14 FEBRUARY 2027",
-  venueName: "Your Wedding Venue",
-  venueAddress: "Add the full address, city and other useful directions",
-  mapUrl: "https://maps.google.com",
+  date: "2026-12-23T10:30:00+05:30",
+  dateLabel: "23 DECEMBER 2026",
+  venueName: "La Maria Castle",
+  venueAddress: ""12/240, Church Rd, Kechery, Eranellur, Kerala 680501",
+  mapUrl: "https://www.google.com/maps/search/?api=1&query=La+Maria+Castle%2C+12%2F240%2C+Church+Rd%2C+Kechery%2C+Eranellur%2C+Kerala+680501",
   // For real RSVP delivery, paste a Formspree endpoint here (see README).
   rsvpEndpoint: ""
 };
