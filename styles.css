@@ -57,3 +57,50 @@
   padding: 12px 8px 15px;
   gap: 5px;
 }
+/* Parents and family section */
+.parents-section {
+  background: #173f32;
+  color: #f7f3e9;
+  text-align: center;
+  padding: 90px 22px;
+}
+
+.parents-section > .eyebrow {
+  color: #d9c99e;
+  letter-spacing: .25em;
+  font-size: 10px;
+}
+
+.parents-section h2 {
+  font: 400 clamp(38px, 9vw, 54px)/1.05 var(--serif);
+  color: #fffdf7;
+  max-width: 500px;
+  margin: 25px auto 55px;
+}
+
+.parents-section h2 em {
+  color: #b99b60;
+}
+
+.family-block {
+  margin: 35px auto;
+}
+
+.family-block .eyebrow {
+  color: #b99b60;
+  font-size: 10px;
+  letter-spacing: .25em;
+  margin-bottom: 22px;
+}
+
+.family-block p:last-child {
+  font: 24px/1.5 var(--serif);
+  color: #f7f3e9;
+  margin: 0;
+}
+
+.family-divider {
+  color: #b99b60;
+  font-size: 30px;
+  margin: 45px 0;
+}
