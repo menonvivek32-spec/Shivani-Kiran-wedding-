@@ -55,17 +55,37 @@
 </header>
 
 <main>
+
 <section class="gallery-section section">
-  <div class="gallery-knot" aria-hidden="true">∞</div>
+  <div class="gallery-knot" aria-hidden="true">
+    <svg viewBox="0 0 360 90" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="goldGlow" x="-50%" y="-100%" width="200%" height="300%">
+          <feGaussianBlur stdDeviation="5"/>
+        </filter>
+      </defs>
+      <g stroke="#b99a58" fill="none" stroke-width="2">
+        <path d="M12 45 H112 M248 45 H348"/>
+        <path d="M112 45 L124 35 L136 45 L124 55 Z" fill="#b99a58"/>
+        <path d="M224 45 L236 35 L248 45 L236 55 Z" fill="#b99a58"/>
+        <path d="M180 12 L194 45 L180 78 L166 45 Z"/>
+        <path d="M180 45 C145 10 130 45 160 45 C130 45 145 80 180 45 C215 10 230 45 200 45 C230 45 215 80 180 45"/>
+      </g>
+      <path d="M180 12 L194 45 L180 78 L166 45 Z M180 45 C145 10 130 45 160 45 C130 45 145 80 180 45 C215 10 230 45 200 45 C230 45 215 80 180 45"
+        stroke="#d9b66b" stroke-width="5" fill="none"
+        opacity=".65" filter="url(#goldGlow)"/>
+    </svg>
+  </div>
 
   <h2>A moment, <em>forever.</em></h2>
 
   <div class="gallery-single">
     <figure class="photo">
-      <img src="assets/couple66.jpg" alt="Shivani and Kiran">
+      <img src="assets/couple23.jpg" alt="Shivani and Kiran">
     </figure>
   </div>
 </section>
+
 
 <section class="countdown-section section">
   <p class="eyebrow">UNTIL WE CELEBRATE</p>
