@@ -26,26 +26,6 @@ function tick(){
 tick(); setInterval(tick,1000);
 const observer = new IntersectionObserver(entries => entries.forEach(entry => { if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);} }),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-const form = $('rsvpForm');
-form.addEventListener('submit', async (event) => {
-  event.preventDefault();
-  const data = Object.fromEntries(new FormData(form).entries());
-  if (!wedding.rsvpEndpoint) {
-    const subject = encodeURIComponent(`Wedding RSVP — ${data.name}`);
-    const body = encodeURIComponent(`Name: ${data.name}\nAttendance: ${data.attendance}\nGuests: ${data.guests}\nMessage: ${data.message || '(none)'}`);
-    $('formNote').textContent = 'Your email app will open so you can send this RSVP. To receive replies automatically, configure Formspree in script.js.';
-    // Replace with the host family's actual RSVP email before using this fallback.
-    window.location.href = `mailto:REPLACE-WITH-FAMILY-EMAIL@example.com?subject=${subject}&body=${body}`;
-    return;
-  }
-  const button = form.querySelector('button'); button.disabled = true; button.textContent = 'SENDING…';
-  try {
-    const response = await fetch(wedding.rsvpEndpoint,{method:'POST',headers:{'Accept':'application/json','Content-Type':'application/json'},body:JSON.stringify(data)});
-    if(!response.ok) throw new Error('Submission failed');
-    form.reset(); $('formNote').textContent='Thank you! Your RSVP has been sent.';
-  } catch(error) { $('formNote').textContent='Sorry, the RSVP could not be sent. Please try again or contact the family.'; }
-  finally {button.disabled=false;button.innerHTML='SEND RSVP <span>↗</span>';}
-});
 const music = $('weddingMusic'), musicButton = $('musicButton');
 musicButton.addEventListener('click', async () => {
   if (music.paused) {
