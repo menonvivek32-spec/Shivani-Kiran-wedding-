@@ -240,3 +240,39 @@ main > .parents-section .eyebrow {
 .gallery-two .photo figcaption {
   display: none;
 }
+/* Sacred ornamental gallery borders */
+
+.gallery-two {
+  position: relative;
+  padding: 0 18px;
+}
+
+.gallery-two::before,
+.gallery-two::after {
+  content: "✧";
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  width: 14px;
+  color: #b99b60;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  pointer-events: none;
+}
+
+.gallery-two::before {
+  left: -3px;
+  border-left: 1px solid #b99b60;
+}
+
+.gallery-two::after {
+  right: -3px;
+  border-right: 1px solid #b99b60;
+}
+
+.gallery-two .photo {
+  z-index: 1;
+}
