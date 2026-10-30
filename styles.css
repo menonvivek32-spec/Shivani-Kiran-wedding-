@@ -131,3 +131,34 @@ main > .parents-section .eyebrow {
   text-align: center !important;
   color: #b99b60 !important;
 }
+/* Two-photo wedding gallery */
+.gallery-two {
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  max-width: 950px;
+  align-items: center;
+}
+
+.gallery-two .photo {
+  padding: 8px;
+  margin: 0;
+}
+
+.gallery-two .photo img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 500px) {
+  .gallery-two {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 420px;
+  }
+
+  .gallery-two .photo img {
+    height: 420px;
+  }
+}
