@@ -475,19 +475,19 @@ footer span:nth-child(2) {
 
 /* SINGLE PHOTO GALLERY */
 
+
 .gallery-single {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
   margin: 45px auto 0;
 }
 
 .gallery-single .photo {
-  width: 85%;
-  max-width: 480px;
+  width: 92%;
+  max-width: 520px;
   margin: 0 auto;
-  padding: 14px;
+  padding: 12px;
   background: #fffaf0;
   border: 1px solid var(--gold);
   box-shadow: 0 15px 35px rgba(62, 13, 27, 0.10);
@@ -500,6 +500,7 @@ footer span:nth-child(2) {
   height: auto;
   object-fit: cover;
 }
+
 
 @media (max-width: 380px) {
   .invitation h1 {
