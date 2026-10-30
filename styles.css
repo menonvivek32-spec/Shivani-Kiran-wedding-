@@ -45,20 +45,11 @@
 }
 /* Gallery image adjustment */
 .photo img {
-  height: 220px !important;
+  height: 280px !important;
   object-fit: cover;
   object-position: center;
 }
 
 .photo-tall img {
-  height: 260px !important;
-}
-/* Slightly taller gallery photos */
-.photo img {
-  height: 260px !important;
-  object-fit: cover;
-}
-
-.photo-tall img {
-  height: 300px !important;
+  height: 3200px !important;
 }
