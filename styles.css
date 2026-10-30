@@ -104,3 +104,27 @@
   font-size: 30px;
   margin: 45px 0;
 }
+main > .parents-section {
+  background: #173f32 !important;
+  color: #f7f3e9 !important;
+  text-align: center !important;
+  padding: 90px 22px !important;
+  width: 100%;
+}
+
+main > .parents-section h2 {
+  color: #fffdf7 !important;
+  text-align: center !important;
+  font-family: var(--serif);
+}
+
+main > .parents-section .family-block p {
+  color: #f7f3e9 !important;
+  text-align: center !important;
+  font-family: var(--serif);
+}
+
+main > .parents-section .eyebrow {
+  text-align: center !important;
+  color: #b99b60 !important;
+}
