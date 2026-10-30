@@ -30,12 +30,19 @@ body {
 }
 
 .ornament-top {
-  background: var(--wine);
-  color: var(--gold);
-  text-align: center;
-  padding: 13px;
-  letter-spacing: 10px;
-  font-size: 19px;
+  background: #3e0d1b;
+  color: #d4b46e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 115px;
+  padding: 12px;
+}
+
+.ganpati-icon {
+  width: 85px;
+  height: 85px;
+  display: block;
 }
 
 /* MAIN INVITATION */
