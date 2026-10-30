@@ -198,3 +198,45 @@ main > .parents-section .eyebrow {
   margin-top: 10px;
   margin-bottom: 0;
 }
+/* Agni Sakshi – ornamental photo frames */
+
+.gallery-two {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  max-width: 580px;
+  margin: 45px auto 0;
+}
+
+.gallery-two .photo {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  background: #fffdf7;
+  border: 1px solid #b99b60;
+  box-shadow: 0 8px 25px rgba(23, 63, 50, 0.10);
+}
+
+.gallery-two .photo::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border: 1px solid #d9c99e;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.gallery-two .photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  filter: none;
+}
+
+.gallery-two .photo figcaption {
+  display: none;
+}
