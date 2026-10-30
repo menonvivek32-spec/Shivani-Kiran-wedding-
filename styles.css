@@ -348,11 +348,21 @@ body {
   letter-spacing: 2px;
 }
 
+
 .venue-time {
-  margin: 12px 0 25px;
-  font: 20px var(--serif);
-  color: var(--ink);
+  display: inline-block;
+  margin: 22px auto 30px;
+  padding: 18px 25px;
+  background: var(--ruby);
+  color: var(--ivory);
+  border: 1px solid var(--gold);
+  outline: 1px solid #b99a5870;
+  outline-offset: 4px;
+  font: 26px var(--serif);
+  letter-spacing: 2px;
+  font-weight: 500;
 }
+
 
 .map-button {
   display: inline-block;
