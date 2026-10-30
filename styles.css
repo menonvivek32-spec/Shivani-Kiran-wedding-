@@ -519,5 +519,12 @@ footer span:nth-child(2) {
 }
 
 .invitation:after {
-  transform: translateX(-50%) rotate(90deg);
+  content: "❧";
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--gold);
+  font-size: 38px;
+  z-index: 2;
 }
