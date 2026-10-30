@@ -276,3 +276,20 @@ main > .parents-section .eyebrow {
 .gallery-two .photo {
   z-index: 1;
 }
+.detail-card .eyebrow {
+  font-size: 8px;
+  margin: 10px 0;
+  letter-spacing: .22em;
+}
+
+.detail-card .venue {
+  font-size: 23px;
+  font-weight: 600;
+  margin: 28px 0 8px;
+  color: #173f32;
+}
+
+.detail-card .detail-date {
+  font-size: 16px;
+  margin: 12px 0 24px;
+}
