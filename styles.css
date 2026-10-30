@@ -43,3 +43,13 @@
   object-position: center !important;
   background: #e6e1d1;
 }
+/* Gallery image adjustment */
+.photo img {
+  height: 220px !important;
+  object-fit: cover;
+  object-position: center;
+}
+
+.photo-tall img {
+  height: 260px !important;
+}
