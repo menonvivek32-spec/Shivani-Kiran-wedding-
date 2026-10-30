@@ -528,3 +528,8 @@ footer span:nth-child(2) {
   font-size: 38px;
   z-index: 2;
 }
+.gallery-single .photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
