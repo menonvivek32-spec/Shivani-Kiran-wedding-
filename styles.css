@@ -53,3 +53,12 @@
 .photo-tall img {
   height: 260px !important;
 }
+/* Slightly taller gallery photos */
+.photo img {
+  height: 260px !important;
+  object-fit: cover;
+}
+
+.photo-tall img {
+  height: 300px !important;
+}
