@@ -513,3 +513,11 @@ footer span:nth-child(2) {
     animation: none !important;
   }
 }
+.ornament-divider .flipped {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+
+.invitation:after {
+  transform: translateX(-50%) rotate(90deg);
+}
