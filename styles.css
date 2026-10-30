@@ -21,3 +21,19 @@
   border-color: #d1b675;
   transform: translateY(-2px);
 }
+/* Improve wedding gallery photo framing */
+.gallery .photo:nth-child(1) img {
+  object-position: center 25%;
+}
+
+.gallery .photo:nth-child(2) img {
+  object-position: center 50%;
+}
+
+.gallery .photo:nth-child(3) img {
+  object-position: center 25%;
+}
+
+.gallery .photo:nth-child(4) img {
+  object-position: center 25%;
+}
