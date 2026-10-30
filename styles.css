@@ -101,8 +101,11 @@
 
 .family-divider {
   color: #b99b60;
-  font-size: 30px;
+  font-size: 48px;
+  font-weight: 900;
   margin: 45px 0;
+  line-height: 1;
+  text-shadow: 0 0 1px #b99b60;
 }
 main > .parents-section {
   background: #173f32 !important;
