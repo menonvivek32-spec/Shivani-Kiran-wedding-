@@ -293,3 +293,11 @@ main > .parents-section .eyebrow {
   font-size: 16px;
   margin: 12px 0 24px;
 }
+.hindu-swastik {
+  font-family: serif;
+  font-size: 100px;
+  line-height: 1;
+  color: #b99b60;
+  font-weight: 400;
+  margin: 0 auto 18px;
+}
