@@ -1,0 +1,680 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#DCE8EF">
+<meta name="description" content="Shivani and Kiran's wedding reception invitation.">
+<title>Shivani &amp; Kiran | Wedding Reception</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --blue:#DCE8EF;
+  --blue2:#C6D9E5;
+  --deep:#173B59;
+  --gold:#B99A58;
+  --ivory:#FAF8F2;
+  --ink:#294458;
+  --muted:#647987;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'DM Sans',Arial,sans-serif;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  background:var(--ivory);
+  color:var(--ink);
+  font-family:var(--sans);
+  -webkit-font-smoothing:antialiased;
+}
+
+.topline{height:5px;background:var(--gold)}
+
+.hero{
+  min-height:100svh;
+  position:relative;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  background:var(--blue);
+  color:var(--deep);
+  padding:65px 22px;
+}
+
+.hero:before,.hero:after{
+  content:"";
+  position:absolute;
+  pointer-events:none;
+  z-index:0;
+}
+
+.hero:before{
+  width:120%;
+  height:38%;
+  left:-10%;
+  bottom:-17%;
+  border-radius:50% 50% 0 0 / 32% 32% 0 0;
+  background:linear-gradient(135deg,#c6d9e5cc,#f7f8f4cc);
+  transform:rotate(-5deg);
+}
+
+.hero:after{
+  width:210px;
+  height:270px;
+  right:-75px;
+  top:8%;
+  border:1px solid #b99a5877;
+  border-radius:48% 48% 8% 8%;
+  transform:rotate(24deg);
+}
+
+.hero-wash{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(145deg,#eef4f5 0%,#dce8ef 48%,#c6d9e5 100%);
+  overflow:hidden;
+}
+
+.hero-wash:before,.hero-wash:after{
+  content:"✧   ❀   ✧";
+  position:absolute;
+  color:#b99a5850;
+  font:26px var(--serif);
+  letter-spacing:1.2em;
+  white-space:nowrap;
+  pointer-events:none;
+}
+
+.hero-wash:before{
+  top:12%;
+  left:-8%;
+  transform:rotate(-12deg);
+}
+
+.hero-wash:after{
+  right:-12%;
+  bottom:18%;
+  transform:rotate(-12deg);
+}
+
+.hero-content{
+  z-index:1;
+  text-align:center;
+  max-width:680px;
+  width:100%;
+}
+
+.ganesh-image{
+  display:block;
+  width:74px;
+  height:74px;
+  object-fit:contain;
+  margin:0 auto 14px;
+}
+
+.eyebrow{
+  font-size:10px;
+  letter-spacing:.24em;
+  font-weight:600;
+  line-height:1.8;
+  color:var(--deep);
+}
+
+.ornament{
+  font:30px var(--serif);
+  color:var(--gold);
+  margin:10px 0 18px;
+}
+
+.host-line{
+  font:20px/1.4 var(--serif);
+  margin:13px auto;
+  color:var(--deep);
+}
+
+.family-address{
+  display:inline-block;
+  font-size:.7em;
+  color:var(--muted);
+  margin-top:3px;
+}
+
+.invitation-request{
+  max-width:530px;
+  margin:22px auto 25px;
+  font:18px/1.55 var(--serif);
+  color:var(--ink);
+}
+
+.stacked-names{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:.25em;
+  margin:24px 0 25px;
+  font:400 clamp(58px,13vw,100px)/.88 var(--serif);
+  letter-spacing:-.04em;
+  color:var(--deep);
+}
+
+.stacked-names span,.stacked-names i{
+  display:block;
+  width:100%;
+  text-align:center;
+}
+
+.stacked-names i{
+  font-size:.42em;
+  font-weight:400;
+  color:var(--gold);
+  letter-spacing:.02em;
+}
+
+.ornament-divider{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  color:var(--gold);
+  margin:25px auto;
+}
+
+.ornament-divider:before,.ornament-divider:after{
+  content:"";
+  width:48px;
+  height:1px;
+  background:var(--gold);
+}
+
+.tagline{
+  font:italic 22px/1.35 var(--serif);
+  color:var(--deep);
+  margin:12px auto 24px;
+}
+
+.date-display{
+  font-size:12px;
+  letter-spacing:.22em;
+  font-weight:600;
+  color:var(--deep);
+  margin:22px 0 26px;
+}
+
+.enter-link{
+  display:inline-block;
+  border:1px solid var(--gold);
+  padding:14px 23px;
+  color:var(--deep);
+  text-decoration:none;
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:.14em;
+  transition:.25s;
+}
+
+.enter-link:hover{
+  background:var(--gold);
+  color:var(--ivory);
+}
+
+.section{
+  text-align:center;
+  padding:88px 22px;
+}
+
+.section-mark{
+  font-size:25px;
+  color:var(--gold);
+  margin-bottom:14px;
+}
+
+.section .eyebrow{color:var(--muted)}
+
+.section h2,.closing h2{
+  font:400 clamp(42px,9vw,66px)/.95 var(--serif);
+  letter-spacing:-.035em;
+  margin:18px 0 22px;
+  color:var(--deep);
+}
+
+.section h2 em,.closing h2 em{
+  color:var(--gold);
+  font-weight:400;
+}
+
+.section-copy{
+  max-width:460px;
+  margin:0 auto;
+  color:var(--muted);
+  font:18px/1.65 var(--serif);
+}
+
+.countdown{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:clamp(10px,4vw,28px);
+  margin:38px auto 14px;
+}
+
+.countdown div{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  min-width:46px;
+}
+
+.countdown strong{
+  font:500 clamp(30px,7vw,46px)/1 var(--serif);
+  color:var(--deep);
+  font-variant-numeric:tabular-nums;
+}
+
+.countdown span{
+  font-size:8px;
+  letter-spacing:.18em;
+  color:var(--muted);
+}
+
+.countdown>b{
+  font:25px var(--serif);
+  color:var(--gold);
+  align-self:flex-start;
+}
+
+.countdown-note{
+  font-size:10px;
+  letter-spacing:.08em;
+  color:var(--muted);
+}
+
+.story{
+  background:linear-gradient(180deg,#FAF8F2 0%,#F0F5F6 100%);
+  position:relative;
+}
+
+.story:before{
+  content:'✧  ❀  ✧';
+  display:block;
+  color:#b99a5866;
+  font:22px var(--serif);
+  letter-spacing:1em;
+  margin:0 auto 18px;
+}
+
+.photo-frame{
+  max-width:520px;
+  margin:42px auto 0;
+  padding:10px;
+  background:#fff;
+  border:1px solid var(--gold);
+  box-shadow:0 14px 38px #173b5918;
+  position:relative;
+}
+
+.photo-frame:before{
+  content:"";
+  position:absolute;
+  inset:5px;
+  border:1px solid #d8c79e;
+  pointer-events:none;
+  z-index:1;
+}
+
+.photo-frame img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:760px;
+  object-fit:cover;
+  object-position:center;
+}
+
+.details{
+  background:linear-gradient(135deg,#dce8ef 0%,#c6d9e5 55%,#eaf1f3 100%);
+  position:relative;
+}
+
+.detail-card{
+  max-width:440px;
+  margin:36px auto 0;
+  padding:35px 24px;
+  background:var(--ivory);
+  border:1px solid #d2bd8e;
+  box-shadow:0 14px 35px #173b5912;
+}
+
+.detail-icon{
+  font-size:28px;
+  color:var(--gold);
+}
+
+.detail-card .eyebrow{
+  margin:12px 0;
+  color:var(--muted);
+  font-size:9px;
+}
+
+.detail-card h3{
+  font:500 40px var(--serif);
+  color:var(--deep);
+  margin:10px 0;
+}
+
+.detail-date,.detail-time{
+  font:18px var(--serif);
+  margin:10px;
+  color:var(--ink);
+}
+
+.venue{
+  font-weight:600;
+  margin:24px 0 6px;
+  color:var(--deep);
+}
+
+.venue-address{
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.6;
+}
+
+.time-note{
+  font:italic 17px var(--serif);
+  color:var(--muted);
+  margin:20px auto 0;
+}
+
+.closing{
+  padding:82px 22px;
+  text-align:center;
+  background:var(--deep);
+  color:var(--ivory);
+}
+
+.closing-flower{
+  font-size:28px;
+  color:var(--gold);
+  margin-bottom:20px;
+}
+
+.closing .eyebrow{color:#d8c79e}
+
+.closing h2{
+  color:var(--ivory);
+  margin:20px 0 25px;
+}
+
+.closing>p:not(.eyebrow){
+  font:italic 19px var(--serif);
+  color:#e4eaf0;
+}
+
+.closing-names{
+  font:38px var(--serif);
+  margin-top:8px;
+}
+
+.closing-names span{
+  font-size:20px;
+  color:var(--gold);
+  padding:0 7px;
+}
+
+footer{
+  display:flex;
+  justify-content:center;
+  padding:20px;
+  background:#102d45;
+  color:#e5eaf0;
+  font-size:9px;
+  letter-spacing:.16em;
+  text-align:center;
+}
+
+.reveal{
+  opacity:0;
+  transform:translateY(16px);
+  transition:opacity .8s ease,transform .8s ease;
+}
+
+.reveal.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+@media(max-width:420px){
+  .section{padding:72px 18px}
+  .host-line{font-size:18px}
+  .invitation-request{font-size:16px}
+  .countdown{gap:8px}
+  .countdown div{min-width:40px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  *{transition:none!important}
+}
+</style>
+</head>
+
+<body>
+<div class="topline"></div>
+
+<header class="hero" id="home">
+  <div class="hero-wash"></div>
+
+  <div class="hero-content">
+
+    <img class="ganesh-image"
+         src="assets/ganpati-header.png"
+         alt="Decorative Ganpati illustration"
+         onerror="this.style.display='none'">
+
+    <p class="eyebrow">TOGETHER WITH THEIR FAMILIES</p>
+    <div class="ornament">❦</div>
+
+    <p class="host-line">
+      Mrs. Rekha Padmarajan and Mr. Padmarajan Nair<br>
+      <span class="family-address">
+        (Indira Mandiram, Thiruthiparambu, Thrissur)
+      </span>
+    </p>
+
+    <p class="invitation-request">
+      Cordially requests your presence and blessings,
+      along with your family, on the auspicious occasion
+      of the wedding of our daughter
+    </p>
+
+    <h1 class="stacked-names">
+      <span>Shivani</span>
+      <i>With</i>
+      <span>Kiran</span>
+    </h1>
+
+    <p class="host-line">
+      S/O Mrs. Sujatha Koyilath &amp; Mr. Vasudevan Menon<br>
+      <span class="family-address">
+        (Pottekalam, Valacheri)
+      </span>
+    </p>
+
+    <div class="ornament-divider">✦</div>
+
+    <p class="tagline">
+      A celebration of love, family<br>
+      and a beautiful beginning
+    </p>
+
+    <div class="date-display">
+      THURSDAY · 24 DECEMBER · 2026
+    </div>
+
+    <a class="enter-link" href="#celebration">
+      DISCOVER THE EVENING ↓
+    </a>
+
+  </div>
+</header>
+
+<main>
+
+<section class="section" id="celebration">
+  <div class="section-mark">✦</div>
+  <p class="eyebrow">COUNTING DOWN TO THE CELEBRATION</p>
+
+  <h2>
+    A beautiful evening<br>
+    <em>awaits us.</em>
+  </h2>
+
+  <p class="section-copy">
+    With our loved ones around us, we look forward to
+    celebrating this special beginning with you.
+  </p>
+
+  <div class="countdown" aria-label="Countdown to the reception">
+    <div><strong id="days">—</strong><span>DAYS</span></div>
+    <b>:</b>
+    <div><strong id="hours">—</strong><span>HOURS</span></div>
+    <b>:</b>
+    <div><strong id="minutes">—</strong><span>MINUTES</span></div>
+    <b>:</b>
+    <div><strong id="seconds">—</strong><span>SECONDS</span></div>
+  </div>
+
+  <p class="countdown-note" id="countdownNote">
+    Counting down to our special evening
+  </p>
+</section>
+
+<section class="section story" id="memories">
+  <div class="section-mark">❀</div>
+  <p class="eyebrow">A MOMENT TO REMEMBER</p>
+
+  <h2>
+    Two hearts,<br>
+    <em>one beautiful journey.</em>
+  </h2>
+
+  <p class="section-copy">
+    A little glimpse of the happiness we can't wait to celebrate with you.
+  </p>
+
+  <figure class="photo-frame reveal">
+    <img src="assets/reception-photo.jpeg"
+         alt="Shivani and Kiran sharing a joyful moment">
+  </figure>
+</section>
+
+<section class="section details" id="details">
+  <div class="section-mark">✦</div>
+  <p class="eyebrow">THE RECEPTION</p>
+
+  <h2>
+    Join us for<br>
+    <em>an evening of joy.</em>
+  </h2>
+
+  <div class="detail-card">
+    <div class="detail-icon">❋</div>
+    <p class="eyebrow">CELEBRATE WITH US</p>
+    <h3>Wedding Reception</h3>
+
+    <p class="detail-date">Thursday, 24 December 2026</p>
+    <p class="detail-time">4:00 PM – 8:00 PM</p>
+
+    <p class="venue">Karuna Auditorium</p>
+    <p class="venue-address">
+      We look forward to welcoming you.
+    </p>
+  </div>
+
+  <p class="time-note">
+    Your presence will make our celebration complete.
+  </p>
+</section>
+
+<section class="closing">
+  <div class="closing-flower">✳</div>
+  <p class="eyebrow">WITH LOVE AND GRATITUDE</p>
+
+  <h2>
+    We can't wait<br>
+    to celebrate <em>with you.</em>
+  </h2>
+
+  <p>With love,</p>
+
+  <div class="closing-names">
+    Shivani <span>&amp;</span> Kiran
+  </div>
+
+  <div class="ornament-divider">✦</div>
+
+  <p class="eyebrow">MADE WITH LOVE · SHARED WITH JOY</p>
+</section>
+
+</main>
+
+<footer>
+  SHIVANI &amp; KIRAN · WEDDING RECEPTION · 24 DECEMBER 2026
+</footer>
+
+<script>
+const receptionDate = new Date(2026, 11, 24, 16, 0, 0);
+
+function updateCountdown(){
+  const diff = receptionDate.getTime() - Date.now();
+  const ids = ["days","hours","minutes","seconds"];
+
+  if(diff <= 0){
+    ids.forEach(id => {
+      document.getElementById(id).textContent = "0";
+    });
+    document.getElementById("countdownNote").textContent =
+      "The celebration day is here!";
+    return;
+  }
+
+  const values = [
+    Math.floor(diff / 86400000),
+    Math.floor((diff % 86400000) / 3600000),
+    Math.floor((diff % 3600000) / 60000),
+    Math.floor((diff % 60000) / 1000)
+  ];
+
+  ids.forEach((id,i) => {
+    document.getElementById(id).textContent = values[i];
+  });
+}
+
+updateCountdown();
+setInterval(updateCountdown,1000);
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+},{threshold:.12});
+
+document.querySelectorAll(".reveal").forEach(el => {
+  observer.observe(el);
+});
+</script>
+
+</body>
+</html>
