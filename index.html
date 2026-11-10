@@ -2,13 +2,19 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#173f32">
-<meta name="description" content="A wedding invitation celebrating two hearts and two families."><title>Shivani & Kiran | Wedding Invitation</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#173f32">
+<meta name="description" content="A wedding invitation celebrating two hearts and two families.">
+<title>Shivani & Kiran | Wedding Invitation</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 
 <style>
-/* First-page invitation alignment and font sizes */
+/* Centre-align all first-page invitation text */
 .hero-content {
   text-align: center;
 }
@@ -22,40 +28,55 @@
   text-align: center;
 }
 
+/* Smaller family address text */
 .hero-content .family-address {
   font-size: 0.7em;
 }
 
+/* Slightly smaller invitation request */
 .hero-content .invitation-request {
   font-size: 0.9em;
 }
 
-.hero-content h1 span,
-.hero-content h1 i {
-  display: block;
+/* Stack Shivani, With and Kiran vertically */
+.hero-content h1.stacked-names {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  gap: 0;
 }
 
-.hero-content h1 span,
-.hero-content h1 i {
+.hero-content h1.stacked-names span,
+.hero-content h1.stacked-names i {
+  display: block !important;
+  width: 100%;
   text-align: center;
 }
 </style>
 </head>
 
 <body>
+
 <div class="topline"></div>
 
 <header class="hero" id="home">
   <div class="hero-wash"></div>
+
   <div class="hero-content reveal">
 
     <div class="ganesh" aria-hidden="true">ॐ</div>
 
-    <p class="sanskrit">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ</p>
+    <p class="sanskrit">
+      वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ
+    </p>
 
     <p class="hero-sub">
       Mrs. Rekha Padmarajan and Mr. Padmarajan Nair<br>
-      <span class="family-address">(Indira Mandiram, Thiruthiparambu, Thrissur)</span>
+      <span class="family-address">
+        (Indira Mandiram, Thiruthiparambu, Thrissur)
+      </span>
     </p>
 
     <p class="hero-sub invitation-request">
@@ -64,20 +85,26 @@
       of the wedding of our daughter
     </p>
 
-    <h1>
+    <h1 class="stacked-names">
       <span>Shivani</span>
-      <i>with</i>
+      <i>With</i>
       <span>Kiran</span>
     </h1>
 
     <p class="hero-sub">
       S/O Mrs. Sujatha Koyilath &amp; Mr. Vasudevan Menon<br>
-      <span class="family-address">(Pottekalam, Valacheri)</span>
+      <span class="family-address">
+        (Pottekalam, Valacheri)
+      </span>
     </p>
 
-    <div class="hero-rule"><span></span>✦<span></span></div>
+    <div class="hero-rule">
+      <span></span>✦<span></span>
+    </div>
 
-    <p class="hero-date" id="heroDate">23 DECEMBER 2026</p>
+    <p class="hero-date" id="heroDate">
+      23 DECEMBER 2026
+    </p>
 
     <a class="outline-btn" href="#celebration">
       EXPLORE THE INVITATION <span>↓</span>
@@ -88,44 +115,86 @@
 
 <main>
 
+  <!-- SECOND PAGE: Family details -->
   <section class="parents-section">
+
     <p class="eyebrow">WITH THE GOOD WISHES OF</p>
 
     <div class="family-block">
       <p class="eyebrow">THE BRIDE'S FAMILY</p>
-      <p>Mrs. Rekha Padmarajan<br>&amp; Mr. Padmarajan Nair</p>
+      <p>
+        Mrs. Rekha Padmarajan<br>
+        &amp; Mr. Padmarajan Nair
+      </p>
     </div>
 
     <div class="family-divider">∞</div>
 
     <div class="family-block">
       <p class="eyebrow">THE GROOM'S FAMILY</p>
-      <p>Mrs. Sujatha Koyilath<br>&amp; Mr. Vasudevan Menon</p>
+      <p>
+        Mrs. Sujatha Koyilath<br>
+        &amp; Mr. Vasudevan Menon
+      </p>
     </div>
+
   </section>
 
+  <!-- SAVE THE DATE -->
   <section class="intro section" id="celebration">
+
     <div class="section-mark">✦</div>
+
     <p class="eyebrow">SAVE THE DATE</p>
-    <h2>A new chapter<br><em>begins here.</em></h2>
-    <p class="intro-copy">With full hearts and the love of our families, we invite you to join us as we begin our forever together.</p>
+
+    <h2>
+      A new chapter<br>
+      <em>begins here.</em>
+    </h2>
+
+    <p class="intro-copy">
+      With full hearts and the love of our families, we invite you to join us as we begin our forever together.
+    </p>
 
     <div class="countdown" aria-label="Countdown to the wedding">
-      <div><strong id="days">—</strong><span>DAYS</span></div>
+      <div>
+        <strong id="days">—</strong>
+        <span>DAYS</span>
+      </div>
+
       <b>:</b>
-      <div><strong id="hours">—</strong><span>HOURS</span></div>
+
+      <div>
+        <strong id="hours">—</strong>
+        <span>HOURS</span>
+      </div>
+
       <b>:</b>
-      <div><strong id="minutes">—</strong><span>MINUTES</span></div>
+
+      <div>
+        <strong id="minutes">—</strong>
+        <span>MINUTES</span>
+      </div>
+
       <b>:</b>
-      <div><strong id="seconds">—</strong><span>SECONDS</span></div>
+
+      <div>
+        <strong id="seconds">—</strong>
+        <span>SECONDS</span>
+      </div>
     </div>
 
-    <p class="countdown-note" id="countdownNote">Counting down to our special day</p>
+    <p class="countdown-note" id="countdownNote">
+      Counting down to our special day
+    </p>
+
   </section>
 
+  <!-- MEMORIES AND PHOTOS -->
   <section class="story section" id="memories">
 
     <div class="agni-heading">
+
       <div class="agni-emblem hindu-swastik" aria-label="Auspicious Hindu Swastik">
         卐
       </div>
@@ -142,9 +211,11 @@
       </p>
 
       <div class="lotus-divider">❀</div>
+
     </div>
 
     <div class="gallery gallery-two">
+
       <figure class="photo reveal">
         <img src="assets/couple1.jpg" alt="Shivani and Kiran">
       </figure>
@@ -152,26 +223,38 @@
       <figure class="photo reveal">
         <img src="assets/couple%202.jpg" alt="Shivani and Kiran">
       </figure>
+
     </div>
 
   </section>
 
+  <!-- WEDDING DETAILS -->
   <section class="details section" id="details">
+
     <div class="section-mark">✦</div>
+
     <p class="eyebrow">THE WEDDING</p>
-    <h2>Be there for<br><em>our forever.</em></h2>
+
+    <h2>
+      Be there for<br>
+      <em>our forever.</em>
+    </h2>
 
     <div class="detail-card">
+
       <div class="detail-icon">❋</div>
 
       <p class="eyebrow">THE CEREMONY</p>
+
       <h3>The Wedding</h3>
 
       <p class="detail-date" id="ceremonyDate">
         23 December 2026 · 10:30 AM
       </p>
 
-      <p class="venue" id="venueName">La Maria Castle</p>
+      <p class="venue" id="venueName">
+        La Maria Castle
+      </p>
 
       <p class="venue-address" id="venueAddress">
         12/240, Church Rd, Kechery, Eranellur, Kerala 680501
@@ -179,32 +262,58 @@
 
       <a class="text-link" id="mapLink"
          href="https://www.google.com/maps/search/?api=1&amp;query=La+Maria+Castle%2C+12%2F240%2C+Church+Rd%2C+Kechery%2C+Eranellur%2C+Kerala+680501"
-         target="_blank" rel="noreferrer">OPEN MAPS ↗</a>
+         target="_blank" rel="noreferrer">
+        OPEN MAPS ↗
+      </a>
+
     </div>
 
     <p class="details-footnote">
       We can't wait to celebrate with you. Your presence will mean the world to us.
     </p>
+
   </section>
 
+  <!-- CLOSING PAGE -->
   <section class="closing">
+
     <div class="closing-flower">✳</div>
+
     <p class="eyebrow">WITH LOVE AND GRATITUDE</p>
-    <h2>We can't wait<br>to see you <em>there.</em></h2>
+
+    <h2>
+      We can't wait<br>
+      to see you <em>there.</em>
+    </h2>
+
     <p>With love,</p>
-    <div class="closing-names">Shivani<span>&amp;</span> Kiran</div>
-    <div class="hero-rule"><span></span>✦<span></span></div>
-    <p class="closing-small">MADE WITH LOVE · SHARED WITH JOY</p>
+
+    <div class="closing-names">
+      Shivani<span>&amp;</span> Kiran
+    </div>
+
+    <div class="hero-rule">
+      <span></span>✦<span></span>
+    </div>
+
+    <p class="closing-small">
+      MADE WITH LOVE · SHARED WITH JOY
+    </p>
+
   </section>
 
 </main>
 
 <footer>
+
   <span>SHIVANI &amp; KIRAN</span>
+
   <span>OUR WEDDING · OUR FOREVER</span>
+
   <button id="musicButton" class="music-btn" type="button" aria-pressed="false">
     ♫ <span id="musicLabel">PLAY MUSIC</span>
   </button>
+
 </footer>
 
 <audio id="weddingMusic" loop preload="none">
@@ -212,5 +321,6 @@
 </audio>
 
 <script src="script.js"></script>
+
 </body>
 </html>
